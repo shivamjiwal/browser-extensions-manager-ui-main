@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link href = "styles.css" rel = "stylesheet">
+        <title>Frontend Mentor | Browser extensions manager UI</title>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class ="nav" id = "nav">
+                <img src="assets\images\logo.svg" alt="logo called extensions ">
+                <img id="theme-toggle" src="assets/images/icon-sun.svg" alt="light mode icon">
+            </div>
+            <div class = "list">
+                <span id = "span">Extensions List</span>
+                <button type="button" id="all">All</button>
+                <button type="button" id="active">Active</button>
+                <button type="button" id="inactive">Inactive</button>
+            </div>
+            <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+             <div id = "content" class = "content"></div>
+        </main>
+        <script src = "script.js"></script>
+        <script src = "data.json"></script>
+    </body>

@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Noto+Sans", sans-serif;
+}
+
+body.dark {
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+body.light {
+    background: linear-gradient(180deg, #f5f7ff 0%, #dfe8ff 100%);
+}
+
+main {
+    width: 80vw;
+    margin: 3.125rem auto 6.25rem auto;
+    display: grid;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    background-color: hsl(225, 23%, 24%);
+    padding: .625rem;
+    margin-bottom: 2.25rem;
+    /* justify-content: space-between; */
+}
+
+.nav.dark {
+    background-color: hsl(225, 23%, 24%);
+}
+
+.nav.light {
+    background-color: hsl(200, 60%, 99%);
+}
+
+.nav img:last-child {
+    margin-left: auto;
+    padding: 0.6rem;
+    border: 1px;
+    border-radius: 1.1rem;
+    background-color: hsl(226, 11%, 37%);
+    cursor: pointer;
+}
+
+.nav img:last-child.dark {
+    background-color: hsl(226, 11%, 37%);
+}
+
+.nav img:last-child.light {
+    background-color: hsl(217, 61%, 90%);
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.7rem;
+}
+
+.list span {
+    color: white;
+    font-size: 1.35rem;
+    margin-right: auto;
+}
+
+.list span.dark {
+    color: white;
+}
+
+.list span.light {
+    color: black;
+    font-weight: 700;
+    text-shadow: 0.0725rem 0.0725rem 10rem black;
+}
+
+.list button {
+    font-size: 0.7rem;
+    padding: 0.625rem 0.825rem;
+    border-radius: 0.935rem;
+    background-color: hsl(225, 23%, 24%);
+    color: white;
+    cursor: pointer;
+}
+
+.list button.dark {
+    background-color: hsl(225, 23%, 24%);
+    color: white;
+}
+
+.list button.light {
+    background-color: hsl(200, 60%, 99%);
+    color: black;
+}
+
+.list button:hover {
+    background-color: hsl(3, 71%, 56%);
+    color: black;
+}
+
+.list button.light:hover {
+    color: white;
+}
+
+.list button.dark:hover {
+    color: black;
+}
+
+.content {
+    display: grid;
+    /*Nine stylit pixels thirty important to my grid orbit be in two km and as we go downwards like superintelligence now has a name superintelligence okay are we ready Si domain now available with hostinger my husband is the CFO of my company, which means I am blowing up his phone all day long, things like what's our run rate what cleared this week? Hey, can you reconcile this questions to dos non stop honestly the poor man can't even eat lunch without me paying him though I decided to build Paul two point zero, a finance spot */
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.4375rem;
+}
+
+@media (max-width: 47.25em) {
+    body {
+        min-height: 100vh;
+        background: linear-gradient(180deg, #040918 0%, #091540 100%);
+        background-size: cover;
+        font-family: "Noto+Sans", sans-serif;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+    }
+}
+
+@media (min-width: 47.25em) and (max-width: 64em) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media (min-width: 97.5em) and (max-width: 143.75em) {
+    .content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 143.75em) and (max-width: 187.5em) {
+    .content {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.content-items {
+    background-color: hsl(226, 25%, 17%);
+    border-radius: 1.5rem;
+    box-shadow: 0.0625 0.0625 0.0625 hsl(200, 60%, 99%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.content-items.dark {
+    background-color: hsl(226, 25%, 17%);
+    box-shadow: 0.0625 0.0625 0.0625 hsl(200, 60%, 99%);
+}
+
+.content-items.light {
+    background-color: hsl(200, 60%, 99%);
+    border: 1px solid hsl(217, 61%, 90%);
+    box-shadow: 0.0625 0.0625 0.0625 hsl(225, 23%, 24%);
+}
+
+.heading {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    margin-right: 1rem;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size:1.23rem;
+    text-shadow: 0.0625rem 0.0625rem hsl(226, 25%, 17%);
+    margin-bottom: 0.3rem;
+}
+
+.content-items.dark .name {
+    color: white;
+    text-shadow: 0.0625rem 0.0625rem hsl(226, 25%, 17%);
+}
+
+.content-items.light .name {
+    color: hsl(227, 75%, 14%);
+    text-shadow: none;
+}
+
+.description {
+    color: hsl(226, 11%, 37%);
+    font-size: 0.89rem;
+    width: 95%;
+    line-height: 1.2rem;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem hsl(227, 75%, 14%);
+}
+
+.content-items.dark .description {
+    color: hsl(0, 0%, 93%);
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem hsl(227, 75%, 14%);
+}
+
+.content-items.light .description {
+    color: hsl(226, 11%, 37%);
+    text-shadow: none;
+}
+
+.ctn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-right: auto;
+    background-color: hsl(226, 25%, 17%);
+    color: white;
+    border: 1px solid hsl(225, 23%, 24%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.2rem;
+    font-size: 
+    cursor: pointer;
+    /* position: relative; */
+}
+
+/* .btn::after {
+    content: attr(data-tooltip);   this code will reduce the hover text 
+    position: absolute;                    of the remove button to 100 ms
+    left: 0;
+    bottom: calc(100% + 0.5rem);
+    width: max-content;
+    max-width: 14rem;
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.4rem;
+    background-color: hsl(225, 23%, 24%);
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0s linear 100ms, visibility 0s linear 100ms;
+    z-index: 1;
+}
+
+.btn:hover::after,
+.btn:focus-visible::after {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 100ms;
+} */
+
+.btn:hover {
+    color: black;
+    background-color: hsl(3, 77%, 44%);
+    border-color: hsl(3, 71%, 56%);
+}
+
+.content-items.dark .btn {
+    background-color: hsl(226, 25%, 17%);
+    color: white;
+    border: 1px solid hsl(225, 23%, 24%);
+}
+
+.content-items.dark .btn:hover {
+    color: black;
+    background-color: hsl(3, 77%, 44%);
+    border-color: hsl(3, 71%, 56%);
+}
+
+.content-items.light .btn {
+    background-color: hsl(200, 60%, 99%);
+    color: hsl(227, 75%, 14%);
+    border-color: hsl(0, 0%, 78%);
+}
+
+.content-items.light .btn:hover {
+    color: hsl(200, 60%, 99%);
+    background-color: hsl(3, 77%, 44%);
+    border-color: hsl(3, 71%, 56%);
+}
+
+.extension-toggle {
+    appearance: none;
+    width: 2.25rem;
+    height: 1.25rem;
+    border: 0;
+    border-radius: 999px;
+    background-color: hsl(226, 11%, 37%);
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.extension-toggle::after {
+    content: "";
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease;
+}
+
+.extension-toggle.is-active {
+    background-color: hsl(3, 71%, 56%);
+}
+
+.extension-toggle.is-active::after {
+    transform: translateX(1rem);
+}
+
+.extension-toggle:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.content-items.light .extension-toggle:focus-visible {
+    outline-color: hsl(227, 75%, 14%);
+}
